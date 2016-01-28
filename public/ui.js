@@ -81,7 +81,7 @@ $(document).ready(function() {
 
         userTypingUI.stopTyping();
 
-        socket.emit('chat message', msg);
+        socket.emit('chat message', userName + ": " + msg);
         $('#m').val('');
         return false;
     });
